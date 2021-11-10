@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title>Bienvenidos a MercadoLiebre</title>
+</head>
+<body>
+    
+<form action="/register" method="post" class="formulario">
+
+        <h1 class="titulo">FORMULARIO DE REGISTRACION</h1>
+
+      <div class="elemento-formulario">  
+        <input type="text" name="nombreYApellido" class="formulario-input" placeholder="Nombre y Apellido" required>
+    </div>
+
+    <div class="elemento-formulario">  
+        <input type="text" name="nombreDeUsuario" class="formulario-input" placeholder="Nombre de Usuario" required>
+    </div> 
+
+    <div class="elemento-formulario">  
+        <label>Fecha de Nacimiento</label>
+        <input type="date" name="fechaDeNacimiento" class="formulario-input" placeholder="Fecha de nacimiento" required>
+    </div>
+
+    <div class="elemento-formulario">  
+        <input type="text" name="domicilioDeUsuario" class="formulario-input" placeholder="Domicilio" required>
+    </div>
+
+    <div class="elemento-formulario">  
+        <label>Perfil de Usuario</label>
+        <input type="radio" name="perfilDeUsuario"> Comprador
+        <input type="radio" name="perfilDeUsuario"> Vendedor
+    </div>
+
+    <div class="elemento-formulario">  
+        <label>Categoria:</label>
+        <select class="formulario-input">
+            <option value="Electro">Electro</option>
+            <option value="Moda">Moda</option>
+            <option value="Hogar">Hogar</option>
+            <option value="Jugueteria">Jugueteria</option>
+            <option value="Vida Sana">Vida Sana</option>
+        </select>
+    </div>
+
+    <div class="elemento-formulario">
+        <label>Foto de Usuario</label>
+        <input type="file" class="formulario-input">
+    </div>
+
+    <div class="elemento-formulario">  
+        <input type="password" name="passwordDeUsuario" class="formulario-input" placeholder="Contrasenia" required minlength="3">
+    </div>
+
+    <div class="elemento-formulario">  
+        <input type="password" name="passwordDeUsuario" class="formulario-input" placeholder="Confirmar constrasenia" required>
+    </div>
+
+    <button type="submit" class="boton-enviar">Enviar</button>
+
+    <button type="reset" class="boton-borrar">Borrar</button>
+
+    </form>
+</body>
+</html>

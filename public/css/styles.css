@@ -1,0 +1,340 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+h3{
+    font-size: 24px;
+    text-align: left;
+}
+
+p{
+    font-size: 12px;
+}
+div.top-header{
+    padding: 5%;
+    display: flex;
+    flex-wrap:wrap;
+}
+
+header{
+    background-color: #EAC926;
+    padding: 20px;
+}
+
+header div.logo{
+    padding: 10px;
+}
+
+header .form{
+display: flex;
+align-items: center;
+padding: 2px;
+font-size: 11px;
+}
+
+header div.logo,
+header .form{
+    width: 50%;
+}
+
+header nav{
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+header .form .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 15px;
+    height: 18px;
+    text-align: center;
+
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+article div.main-article{
+    width: 100%;
+    margin: 15px 15px 15px 15px;
+    border-top: 1px solid #ebebeb;
+    padding: 15%;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    position:relative;
+
+}
+
+.price{
+    font-size: 18px;
+    width: 30%;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.discount{
+    width: 70%;
+}
+
+h3,
+.description{
+    color: #666;
+}
+
+.description{
+    display: none;
+    margin-top: 20px;
+    color: transparent;
+    transition: color 450ms ;
+}
+
+article:hover .description{
+    color: black;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{
+    background-color: #fff;
+    margin: 10px 0px;
+    transition: all 450ms;
+}
+main section article:hover{
+    box-shadow: 0px 0px 10px rgb(66, 66, 66);
+}
+
+main article i{
+    transition: all 450ms;
+}
+main article:hover i{
+    transform: rotateZ(-90deg);
+}
+
+main section article img{
+    width: 100%;   
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+div.last-visit,
+div.offers{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/*----------------------------------------*/
+
+/* div.main-article i{
+    border-radius: 100%;
+    border: 1px solid #39b54a;
+    padding: 20px;
+} 
+
+div.main-article h4,
+div.main-article p.price{
+margin-top: 30px;
+} */
+
+/*---------------------------*/
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+article div.main-article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+.boton-enviar-login{
+    background-color: blue;
+    color: white;
+    width: 100%;
+}
+
+
+footer article{
+    margin-top: 40px;
+    display: block;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+footer article i{
+    color: blue;
+    font-size: 2em;
+    margin-bottom: 10px ;
+}
+
+footer p{
+    color: rgb(185, 180, 180) ;
+}
+
+
+
+@media (min-width: 361px){
+    main section article .description{
+        display: block;
+    }
+
+
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    main section div.products article{
+        width: 45%;
+    }
+
+    .price,
+    .discount{
+        width: 50%;
+    }
+
+}
+
+
+@media (max-width: 361px){
+    header nav{
+        display: none;
+    }
+}
+
+
+
+@media (min-width: 769px) {
+
+    .products article{
+        width: 22%;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+
+
+    .top-header{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+   .navegador {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    nav ul{
+        display: flex;
+    }
+
+    li{
+     margin-left: 30px;
+     font-size: 15px;
+    }
+
+    footer{
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 10px;
+        margin: 20px 20px 20px 20px;
+    }
+
+    footer article{
+        padding: 20px;
+    }
+
+    footer article h5{
+        margin: 10px;
+    }
+
+    .article4{
+        display: inline-block;
+        padding: 10px;
+        margin: 20px 20px 20px 20px;
+    }
+}

@@ -1,0 +1,39 @@
+.formulario{
+    padding: 25px;
+    background-color: rgb(236, 232, 232);
+    
+}
+
+.elemento-formulario{
+    display: block;
+    padding-bottom: 30px;
+}
+
+.formulario-input{
+    display: block;
+    border-radius: 3px;
+    border: none;
+    width: 100%;
+    height: 40px;
+    
+}
+
+div.elemento-formulario label{
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.boton-enviar-login{
+    font-size: 10px;
+    padding: 5px;
+    background-color: rgb(199, 193, 193);
+    border-radius: 3px;
+    transition: all 450ms;
+}
+
+.boton-enviar-login:hover{
+    background-color: #0022AA;
+    color: wheat;
+}

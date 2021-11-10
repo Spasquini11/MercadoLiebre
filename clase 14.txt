@@ -1,0 +1,59 @@
+***FLEX BOX***
+
+Propone organizar elementos presentes en la estructura del HTML, organica y fluida.
+
+Organiza mas facil a tu gusto.
+
+.contenedor{
+displaplay: FLEX;                            //Un elemento al lado del otro con esto.
+flex-wrap: wrap;                             //crea nuevas filas para que este prolijo.
+}
+
+**EJE**
+Un contenedor flex contiene el eje principal "main axis" y el eje transversal "cross axis". Nosotros definimos el posicionamiento.
+No tenemos arriba, abajo, izquiero o derecho. Lo flex es para no estar limitado...
+
+Main axis start inicia en la parte lateral izquierda y el main axis end en la derecha. mientras que el main axis sea el horizontal.
+cross axis start inicia en la parte de arriba y el cross axis end en la parte de abajo. mientras que el cross axis sea el vertical.
+( y viseversa)
+
+flex direction: row; main axis horizontal de izq a derecha y cross axis de arriba abajo.
+flex direction: row-reverse; main axis horizontal de derecha a izq y cross axis de arriba a abajo.
+flex direction: column; main axis vertical de arriba abajo y cross axis de derecha a izq.
+flex direction: column-reverse; main axis de abajo a arriba y cross axis de derecha a izq.
+
++main axis > justify-cotnent
+justify-cotnent: flex-start; pegado a la izq, de izq a la der.
+justify-cotnent: flex-end; pega a la derecha. de izq a la der.
+justify-cotnent: flex-center;
+justify-cotnent: space-between; de izq a der, pegado a la izq, derecha centro, y pegado a la der.
+justify-cotnent: space-arround; c/elemento mitad izq mitad der.
+
++cross axis > align-items
+align-items: strech; pegado arriba, de arriba a abajo en columnas. Todos iguales estirados.
+align-items: flex-star; pegago arriba a la izq hacia la derecha.
+align-items: flex-end; pegado abajo a la izq, hacia la derecha.
+align-items: center; pegado al medio de izq a der.
+
+
+
+**estructura basica de flexbox**
+retoma lo anterior, pero bastante mas claro.
+
+
+**ITEMS**
+Son los elementos internos. Directo sobre los elementos en CSS.
+
+order: 0; por defecto.
+order: -1; //uno para atras
+order: 1; // va al final.
+
+align-self: ; como align-self pero solo al item asignado.
+
+
+***PROYECTO CON FLEXBOX***
+
+
+
+
+
