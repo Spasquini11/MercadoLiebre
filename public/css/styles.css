@@ -7,6 +7,7 @@
 body{
     font-family: 'Roboto', sans-serif;
     background-color: #ebebeb;
+    
 }
 
 h3{
@@ -265,7 +266,10 @@ footer p{
     }
     
     main section div.products article{
-        width: 24%;
+        width: 70%;
+        text-align: center;
+        align-items: center;
+        margin-left: 50px;
     }
 
     .price,
