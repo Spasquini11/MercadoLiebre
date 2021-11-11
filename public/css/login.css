@@ -37,3 +37,9 @@ div.elemento-formulario label{
     background-color: #0022AA;
     color: wheat;
 }
+
+nav{
+    display: flex;
+    justify-content: space-between;
+
+}
