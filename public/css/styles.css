@@ -266,10 +266,10 @@ footer p{
     }
     
     main section div.products article{
-        width: 70%;
+        width: 22%;
         text-align: center;
         align-items: center;
-        margin-left: 50px;
+        margin-left: 10px;
     }
 
     .price,
@@ -280,7 +280,7 @@ footer p{
 }
 
 
-@media (max-width: 361px){
+@media (max-width: 769px){
     header nav{
         display: none;
     }
@@ -290,9 +290,7 @@ footer p{
 
 @media (min-width: 769px) {
 
-    .products article{
-        width: 24%;
-    }
+
 
     .burger-menu{
         display: none;
@@ -302,7 +300,7 @@ footer p{
 
     .top-header{
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: wrap;  
     }
 
 
@@ -341,4 +339,11 @@ footer p{
         padding: 10px;
         margin: 20px 20px 20px 20px;
     }
+
+
+
+main section article {
+    width: 100%;   
+}
+
 }

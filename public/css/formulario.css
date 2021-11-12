@@ -1,5 +1,5 @@
 .formulario{
-    padding: 350px;
+    padding: 30px;
     background-color: rgb(236, 232, 232);
 
 }
@@ -50,4 +50,22 @@ input:invalid {
 
 input:invalid:focus {
     background-image: linear-gradient(blue, yellow)
+}
+
+
+
+@media (min-width: 361px) {
+    .formulario{
+        padding: 30px;
+    
+    }
+
+}
+
+@media (min-width: 769px) {
+    .formulario{
+        padding: 200px;
+    
+    }
+
 }
