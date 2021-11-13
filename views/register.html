@@ -11,29 +11,29 @@
     <title>Bienvenidos a MercadoLiebre</title>
 </head>
 <body>
-    
+<main>    
 <form action="/register" method="post" class="formulario">
 
         <h1 class="titulo">FORMULARIO DE REGISTRACION</h1>
 
       <div class="elemento-formulario">  
-        <input type="text" name="nombreYApellido" class="formulario-input" placeholder="Nombre y Apellido" required>
+        <input type="text" name="nombreYApellido" class="formulario-input" placeholder="Nombre y Apellido" required minlength="3" maxlength="20">
     </div>
 
     <div class="elemento-formulario">  
-        <input type="text" name="nombreDeUsuario" class="formulario-input" placeholder="Nombre de Usuario" required>
+        <input type="text" name="nombreDeUsuario" class="formulario-input" placeholder="Nombre de Usuario" required minlength="3" maxlength="20">
     </div> 
 
     <div class="elemento-formulario">  
         <label>Fecha de Nacimiento</label>
-        <input type="date" name="fechaDeNacimiento" class="formulario-input" placeholder="Fecha de nacimiento" required>
+        <input type="date" name="fechaDeNacimiento" class="formulario-input" placeholder="Fecha de nacimiento" required max="2005-01-01">
     </div>
 
     <div class="elemento-formulario">  
         <input type="text" name="domicilioDeUsuario" class="formulario-input" placeholder="Domicilio" required>
     </div>
 
-    <div class="elemento-formulario">  
+    <div class="elemento-formulario" required>  
         <label>Perfil de Usuario</label>
         <input type="radio" name="perfilDeUsuario"> Comprador
         <input type="radio" name="perfilDeUsuario"> Vendedor
@@ -56,11 +56,11 @@
     </div>
 
     <div class="elemento-formulario">  
-        <input type="password" name="passwordDeUsuario" class="formulario-input" placeholder="Contrasenia" required minlength="3">
+        <input type="password" name="passwordDeUsuario" class="formulario-input" placeholder="Contrasenia" required minlength="8">
     </div>
 
     <div class="elemento-formulario">  
-        <input type="password" name="passwordDeUsuario" class="formulario-input" placeholder="Confirmar constrasenia" required>
+        <input type="password" name="passwordDeUsuario" class="formulario-input" placeholder="Confirmar constrasenia" required minlength="8">
     </div>
 
     <button type="submit" class="boton-enviar">Enviar</button>
@@ -68,5 +68,6 @@
     <button type="reset" class="boton-borrar">Borrar</button>
 
     </form>
+</main>
 </body>
 </html>

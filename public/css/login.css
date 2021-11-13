@@ -30,7 +30,7 @@ div.elemento-formulario label{
     padding: 5px;
     background-color: rgb(199, 193, 193);
     border-radius: 3px;
-    transition: all 450ms;
+    transition: all 250ms;
 }
 
 .boton-enviar-login:hover{
@@ -41,5 +41,4 @@ div.elemento-formulario label{
 nav{
     display: flex;
     justify-content: space-between;
-
 }
